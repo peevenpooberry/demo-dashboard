@@ -8,7 +8,7 @@ server = app.server
 df = pd.read_csv('https://archive.ics.uci.edu/ml/machine-learning-databases/molecular-biology/promoter-gene-sequences/promoters.data')
 
 app.layout = [
-    html.Div(children='Hello, Dash'),
+    html.Div(childre'),
     dag.AgGrid(
         rowData=df.to_dict('records'),
         columnDefs=[{"field": i} for i in df.columns]
